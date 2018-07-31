@@ -1,0 +1,19 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+```{r}
+setwd("/Users/Andrew/Documents/gu/math-623/project/ScSR/Data/Testing")
+
+library(png)
+high_res <- readPNG("staticmap_high.png")
+low_res <- readPNG("staticmap_low.png")
+
+dim(high_res)
+dim(low_res)
+```
+
+```{r}
+
+```
