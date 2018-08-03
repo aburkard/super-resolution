@@ -15,12 +15,13 @@
 clear all; clc; close all;
 addpath(genpath('RegularizedSC'));
 
-TR_IMG_PATH = 'Data/Training';
+%TR_IMG_PATH = 'Data/Training';
+TR_IMG_PATH = '../images_bmp/train/hi';
 
 dict_size   = 512;          % dictionary size
 lambda      = 0.15;         % sparsity regularization
 patch_size  = 5;            % image patch size
-nSmp        = 100000;       % number of patches to sample
+nSmp        = 1000;       % number of patches to sample
 upscale     = 2;            % upscaling factor
 
 % randomly sample image patches
