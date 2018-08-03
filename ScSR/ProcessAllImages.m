@@ -47,7 +47,7 @@ for K = 1 : length(img_dir)
 
     % read ground truth image
     
-    im = imread(fullfile(ref_img_path, filename));
+    im = imread(fullfile(ref_img_path, char(strrep(filename, "lo", "hi"))));
 
     % compute PSNR for the illuminance channel
     bb_rmse = compute_rmse(im, im_b);

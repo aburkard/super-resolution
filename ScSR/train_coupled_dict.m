@@ -39,5 +39,6 @@ Dl = D(hDim+1:end, :);
 
 patch_size = sqrt(size(Dh, 1));
 
-dict_path = ['Dictionary/D_' num2str(dict_size) '_' num2str(lambda) '_' num2str(patch_size) '_s' num2str(upscale) '.mat' ];
+%dict_path = ['Dictionary/D_' num2str(dict_size) '_' num2str(lambda) '_' num2str(patch_size) '_s' num2str(upscale) '.mat' ];
+dict_path = 'Dictionary/D_512_0.15_5_s2.mat';
 save(dict_path, 'Dh', 'Dl');
